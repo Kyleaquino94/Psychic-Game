@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Psychic-Game</title>
+</head>
+
+<body>
+    <div>
+        <p id="direction-text">Guess what letter I'm thinking of</p>
+        <p id="userchoice-text"></p>
+        <p id="computerchoice-text"></p>
+        <p id="wins-text">Wins:</p>
+        <p id="losses-text">Losses:</p>
+        <p id="guessleft-text">Guesses Left:</p>
+        <p id="yourchoice-text">Your guesses so far:</p>
+    </div>
+
+    <script type="text/javascript">
+
+    //creating an array that list all the options
+    var computerChoices =["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+    //creating variables for win, lose, guesses.  They have 10 guesses
+
+    var wins = 0;
+    var losses = 0;
+    var guesses = 9;
+
+    //user guesses array
+    var userGuesses = event.key;
+
+    //the computer will now guess what letter to choose
+    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+        
+    
+    </script>
+
+</body>
+</html>
